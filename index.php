@@ -31,7 +31,6 @@
                     <div class="col-lg-6 bg-info mt-5">
                         <form id="preview-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                             <textarea id="editor" name="preview-form-comment" class="w-100 bg-success"></textarea>
-                            <textarea id="editor" name="preview-form-comment" class="w-100 bg-success"></textarea>
                             <input type="submit" value="Submit">
                         </form>
                     </div>
@@ -50,11 +49,12 @@
         <script src="js/php.js"></script>
         <script src="js/javascript.js"></script>
         <script src="js/python.js"></script>
+        <script src="js/htmlmixed.js"></script>
         <script src="js/addons/closetag.js"></script>
         <script src="js/addons/closebrackets.js"></script>
         <script>
             var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-                mode: "javascript",
+                mode: "htmlmixed",
                 theme: "material",
                 lineNumbers: true,
                 autoCloseTags: true,
